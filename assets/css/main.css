@@ -1913,6 +1913,7 @@
 			background-attachment: scroll !important;
 		}
 
+		/*
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
@@ -1936,7 +1937,7 @@
 			}
 
 		}
-
+		*/
 		@media screen and (max-width: 736px) {
 
 			.main.fullscreen {
@@ -1992,12 +1993,18 @@
 
 	#footer {
 		position: relative;
-		height: 5em;
-		line-height: 5em;
+		height: 3em;
+		line-height: 3em;
 		margin: 0;
 		background: #39454b;
 		color: rgba(185, 186, 187, 0.5);
 		overflow: hidden;
+		
+		/*z-index: 10000;
+		left: 0;
+		bottom: 0;
+		width: 100%;*/
+		
 	}
 
 		#footer a {
@@ -2013,7 +2020,7 @@
 			left: 1em;
 			top: 0.25em;
 			height: 5em;
-			line-height: 5em;
+			line-height: 3em;
 			margin: 0;
 		}
 
@@ -2031,7 +2038,7 @@
 			right: 2em;
 			top: 0;
 			height: 5em;
-			line-height: 5em;
+			line-height: 3em;
 			margin: 0;
 		}
 
@@ -2130,6 +2137,49 @@
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
 	}
+	
+    #two .features li {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      width: 9em;
+      font-size: 1.25em;
+      letter-spacing: -0.5px; }
+      #two .features li:after {
+        content: "\f067";
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        position: absolute;
+        width: 2em;
+        height: 2em;
+        line-height: 2em;
+        top: 1em;
+        left: -1.05em;
+        color: #dee0e3;
+        font-size: 1.5em; }
+      #two .features li:before {
+        display: block;
+        margin: 0 auto 0.35em auto;
+        border-radius: 100%;
+        background: transparent;
+        font-size: 2.75em;
+        width: 2.1em;
+        height: 2.1em;
+        line-height: 2.1em;
+        text-align: center;
+        box-shadow: 0 0 0 1px #dee0e3;
+        cursor: default;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
+      #two .features li:first-child:after {
+        display: none; }
 
 /* Contact */
 
