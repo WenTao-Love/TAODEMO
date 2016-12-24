@@ -35,7 +35,8 @@
 			});
 
 		// Fix: Placeholder polyfill.
-			$('form').placeholder();
+		
+		//$('form').placeholder();
 
 		// Fix: Flexbox min-height bug on IE.
 			if (skel.vars.IEVersion < 12) {
